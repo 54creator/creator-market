@@ -1,0 +1,86 @@
+.normal {
+  margin-top: 3em;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.list {
+  list-style: none;
+}
+
+.loading {
+  height: 200px;
+  padding: 70px 0 90px;
+  text-align: center;
+  .tip {
+    margin-top: 24px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.sider {
+  background: transparent;
+  padding-right: 60px;
+  .tags {
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 16px;
+      a {
+        font-size: 12px;
+        margin-left: 16px;
+      }
+    }
+    .tagCount {
+      opacity: 0.5;
+      margin-left: 4px;
+    }
+  }
+  .tagsSection {
+    max-height: 100vh;
+    overflow: auto;
+  }
+}
+
+.content {
+  overflow: visible !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sider {
+    display: none;
+  }
+  .content {
+    padding: 0 24px;
+  }
+}
+
+.toolbar {
+  margin-bottom: 16px;
+  font-size: 14px;
+  overflow: hidden;
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+    i {
+      transform: rotate(90deg);
+      color: rgba(0, 0, 0, .85);
+    }
+    .type {
+      margin-left: 16px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: all .3s;
+      &:hover {
+        opacity: 1;
+      }
+      &.current {
+        color: #444;
+        opacity: 1;
+      }
+    }
+  }
+}

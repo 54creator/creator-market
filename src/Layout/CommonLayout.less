@@ -1,0 +1,189 @@
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+  height: 64px;
+  line-height: 64px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .08);
+  overflow: hidden;
+  font-size: 14px;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .headerContent {
+    max-width: 1206px;
+    margin: 0 auto;
+  }
+
+  .title {
+    float: left;
+    font-family: "Andale Mono","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-size: 21px;
+    color: rgba(0,0,0,0.65);
+    letter-spacing: -1px;
+    font-weight: normal;
+    text-transform: uppercase;
+    a {
+      text-decoration: none;
+    }
+    img {
+      width: 24px;
+      margin-right: 10px;
+      position: relative;
+      top: 3px;
+      vertical-align: baseline;
+    }
+  }
+
+  .searchWrapper {
+    margin-left: 32px;
+    width: 668px;
+    display: inline-block;
+    ::placeholder {
+      font-weight: lighter;
+    }
+    i {
+      color: rgba(0, 0, 0, .25);
+      margin-left: 8px;
+    }
+  }
+
+  .search {
+    input {
+      border-radius: 100px;
+      height: 32px;
+      padding: 0 40px !important;
+    }
+  }
+
+  .changeLocale {
+    width: 48px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .link {
+    margin-right: 24px;
+    i {
+      font-size: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+
+  .avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+    top: -2px;
+  }
+
+  a {
+    color: @text-color;
+    &:hover {
+      color: @primary-color;
+    }
+    > i {
+      margin-right: 8px;
+    }
+  }
+}
+
+.banner {
+  height: 280px;
+  text-align: center;
+  background: url("https://gw.alipayobjects.com/zos/rmsportal/eVzxhywWMXULoUculczM.png") center / 1440px no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  margin-top: 64px;
+  margin-bottom: -64px;
+
+  .bannerText {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 5px 10px #6E55B5;
+    margin: 72px 0 16px 0;
+    line-height: 1;
+  }
+  .bannerFeatures {
+    font-size: 13px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    opacity: 0.8;
+    letter-spacing: .1em;
+  }
+  .bannerDot {
+    margin: 0 12px;
+    font-family: Helvetica;
+  }
+  .submit {
+    border-radius: 100px;
+    background: #fff;
+    padding: 0 40px;
+    height: 40px;
+    color: #876FD2;
+    border: 0;
+    box-shadow: 0 0 16px #6E55B5;
+    transition: all .3s;
+    margin-bottom: 56px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 32px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.container {
+  max-width: 1206px;
+  margin: 104px auto 0;
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.footer {
+  padding: 48px 0;
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  font-size: 13px;
+  > div {
+    margin-bottom: 12px;
+  }
+  img {
+    width: 14px;
+    margin: 0 6px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+  a {
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    margin: 0 0.5em;
+    transition: all .3s;
+    &:hover {
+      color: rgba(0,0,0,0.9);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 0 24px;
+  }
+  .searchWrapper {
+    display: none!important;
+  }
+}
